@@ -121,22 +121,19 @@
   </div>
 </section>
 
-<!-- Teaser video-->
+<!-- 主展示图片部分 -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <!-- 替换视频为图片展示 -->
+      <img src="static/images/马尔科夫链.png" alt="Method overview" style="width: 100%; max-height: 600px; object-fit: contain;">
       <h2 class="subtitle has-text-centered">
-        We first actively perceive the post-push behavioral interactions, and keep looping this process until the end of that scene exploration. That is, the current state St is incrementally updated ot through vpp_policy to generate a new viewpoint action; then npp_policy selects a push action Apt, which acts on the environment and then shifts the state of the environment to St+1. Viewpoint planning is performed again to compare the heights before and after pushes and the occupancy map is used to compute entropy reductions as part of the reward signal. 
+        Our method first actively perceives the post-push behavioral interactions, continuously updating the state S<sub>t</sub> through viewpoint planning (vpp_policy). The push action A<sub>pt</sub> selected by npp_policy interacts with the environment, transitioning to state S<sub>t+1</sub>. The system compares pre/post-push heights and uses occupancy map entropy reduction for reward computation.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser image -->
 
 
   
