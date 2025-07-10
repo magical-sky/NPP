@@ -168,11 +168,45 @@
 </section>
 <!-- End teaser image -->
 
+
+<!-- 结果 -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiment Results</h2>
+        <div class="content has-text-justified">
+          <p>
+           To verify the effectiveness of our proposed active perception and behavior interaction architecture, we used the PyBullet simulation platform. In the simulation environment, we used a six-degree-of-freedom UR5 robot equipped with a Robotiq 2f85 fixture. At the same time, in order to simulate the actual robot push task, we built an unknown occlusion scene containing objects of various shapes. This environment not only covers the dynamic changes and placement of objects, but also considers the linkage between viewpoint planning and push tasks to better simulate the complexity of the real environment. During the experiment, we performed training and evaluation on a computer equipped with an i7-13650HX CPU and an RTX4060 GPU.
+            To comprehensively evaluate the effectiveness of our method, we selected the following key evaluation indicators:
+(1) Success Rate: refers to the proportion of the robot that can successfully develop the current scene in multiple experiments. Success is defined as the overall entropy reduction of the map is greater than or equal to the set value (35%).
+(2) Collapse Rate: This indicator is used to measure the frequency of object collapse or instability during the push process. Object collapse not only affects the success rate of the task, but also increases unnecessary risks. Therefore, the collapse rate is an important indicator for evaluating the stability of the push strategy.
+(3) Entropy Reduction Rate: refers to the change in environmental information entropy before and after the push task. A higher entropy reduction rate means that the robot has a stronger understanding and control over the environment.
+(4) Steps: refers to the number of action steps performed by the robot when completing a push task. Fewer steps means more efficient task completion.
+(5) Movement cost: This indicator is used to measure the physical resources consumed by the robot when performing a push task, which is usually related to the total distance moved by the robot or the torque required for pushing. Low motion costs mean that robots can complete tasks in a more efficient manner, reducing energy consumption and operating time.
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- 结果部分 -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- 替换视频为图片展示 -->
+      <img src="static/images/马尔科夫决策链.png" alt="Method overview" style="width: 100%; max-height: 600px; object-fit: contain;">
+      <h2 class="subtitle has-text-centered">
+        Our method first actively perceives the post-push behavioral interactions, continuously updating the state S<sub>t</sub> through viewpoint planning (vpp_policy). The push action A<sub>pt</sub> selected by npp_policy interacts with the environment, transitioning to state S<sub>t+1</sub>. The system compares pre/post-push heights and uses occupancy map entropy reduction for reward computation.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
 <!-- Experimental Results Section -->
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Section Title -->
-    <h2 class="title is-2 has-text-centered">Experimental Results</h2>
+    <h2 class="title is-2 has-text-centered">Demo Video</h2>
     
     <!-- Row 1 -->
     <div class="result-row">
@@ -188,7 +222,6 @@
           <div class="video-container">
             <video controls muted loop>
               <source src="static/videos/carousel2.mp4" type="video/mp4">
-              <figcaption class="has-text-centered">process</figcaption>
             </video>
             <figcaption class="has-text-centered">Process demonstration</figcaption>
           </div>
