@@ -168,6 +168,180 @@
 </section>
 <!-- End teaser image -->
 
+<!-- Experimental Results Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Section Title -->
+    <h2 class="title is-2 has-text-centered">Experimental Results</h2>
+    
+    <!-- Row 1 -->
+    <div class="result-row">
+      <h3 class="title is-4 has-text-centered">1. Initial Setup Comparison</h3>
+      <div class="columns is-vcentered">
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/exp1_setup.jpg" alt="Initial experimental setup">
+            <figcaption class="has-text-centered">Initial environment setup</figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <div class="video-container">
+            <video controls muted loop>
+              <source src="static/videos/exp1_process.mp4" type="video/mp4">
+            </video>
+            <figcaption class="has-text-centered">Process demonstration</figcaption>
+          </div>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/exp1_result.jpg" alt="Final result">
+            <figcaption class="has-text-centered">Final configuration</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="result-row">
+      <h3 class="title is-4 has-text-centered">2. Occlusion Handling</h3>
+      <div class="columns is-vcentered">
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/exp2_occlusion.jpg" alt="Occlusion scenario">
+            <figcaption class="has-text-centered">Occluded objects</figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <div class="video-container">
+            <video controls muted loop>
+              <source src="static/videos/exp2_solving.mp4" type="video/mp4">
+            </video>
+            <figcaption class="has-text-centered">Occlusion resolution</figcaption>
+          </div>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/exp2_cleared.jpg" alt="Cleared result">
+            <figcaption class="has-text-centered">Cleared workspace</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="result-row">
+      <h3 class="title is-4 has-text-centered">3. Multi-Object Scenario</h3>
+      <div class="columns is-vcentered">
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/exp3_multiobj.jpg" alt="Multiple objects">
+            <figcaption class="has-text-centered">Initial arrangement</figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <div class="video-container">
+            <video controls muted loop>
+              <source src="static/videos/exp3_rearrange.mp4" type="video/mp4">
+            </video>
+            <figcaption class="has-text-centered">Rearrangement process</figcaption>
+          </div>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/exp3_final.jpg" alt="Final arrangement">
+            <figcaption class="has-text-centered">Optimized layout</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="result-row">
+      <h3 class="title is-4 has-text-centered">4. Real-World Application</h3>
+      <div class="columns is-vcentered">
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/exp4_realworld.jpg" alt="Real world setup">
+            <figcaption class="has-text-centered">Real environment</figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <div class="video-container">
+            <video controls muted loop>
+              <source src="static/videos/exp4_application.mp4" type="video/mp4">
+            </video>
+            <figcaption class="has-text-centered">Practical implementation</figcaption>
+          </div>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="static/images/exp4_result.jpg" alt="Real world result">
+            <figcaption class="has-text-centered">Task completion</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Custom styling for the results section */
+  .result-row {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #f8f9fc;
+    border-radius: 8px;
+  }
+  
+  .result-row:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .result-row .title.is-4 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
 <!-- Image carousel -->
 <section class="hero is-small">
